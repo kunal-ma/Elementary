@@ -1,0 +1,36 @@
+/*** MaterialFox-Plus : e12f95f ***/
+
+@import "global/variables.css";
+@import "global/global.css";
+@import "icons/icons.css";
+@import "tabbar/tabbar.css";
+@import "navbar/navbar.css";
+@import "personalbar/personalbar.css";
+@import "popup/popup.css";
+@import "urlbar/urlbar.css";
+@import "findbar/findbar.css";
+
+/** Custom Settings **/
+
+/* Remove separator line between Firefox View and Tabs */
+#tabbrowser-tabs{
+    border-inline-start: none !important;
+}
+
+/*Move Firefox Button to correct misalignment*/
+#TabsToolbar #firefox-view-button{
+    margin-left: 5px !important;
+}
+
+/*Modifying separator line between tabs*/
+.tab-content::before,
+.tab-content::after
+{
+	width: 0px !important; /*Default is 1, 0 to hide it*/
+}
+
+/*Correction of search bar text misalignment*/
+#searchbar[focused]
+{
+	padding: 0 auto !important;
+}

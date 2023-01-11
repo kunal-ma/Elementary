@@ -1,0 +1,20 @@
+/* Custom new tab */
+
+@-moz-document url(about:home), url(about:newtab) {
+    .click-target-container *, .top-sites-list * {
+        color: #fff !important ;
+        text-shadow: 2px 2px 2px #222 !important ;
+    }
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: rgb(32, 32, 32) no-repeat url(img/wallpaper.jpg) center ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+}
